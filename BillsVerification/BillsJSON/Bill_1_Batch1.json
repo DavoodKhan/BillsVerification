@@ -1,0 +1,248 @@
+[
+  {
+    "Emp": {
+      "ID": "1",
+      "Name": "John Doe"
+    },
+    "Entries": {
+      "ID": "1",
+      "TotalAmount": "44.4"
+    },
+    "Bills": [
+      {
+        "ID": "1",
+        "Amount": "11.00",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\1_Cab.jpg",
+        "BillDate": "01-MAR-2017",
+        "ValueBesideLabel": "true"
+      },
+      {
+        "ID": "17",
+        "Amount": "33.4",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\17_Grocery.png",
+        "BillDate": "01-FEB-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "1",
+      "Name": "John Doe"
+    },
+    "Entries": {
+      "ID": "7",
+      "TotalAmount": "106.95"
+    },
+    "Bills": [
+      {
+        "ID": "9",
+        "Amount": "60.00",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\9_Gas.jpg",
+        "BillDate": "01-JAN-2017",
+        "ValueBesideLabel": "false"
+      },
+      {
+        "ID": "10",
+        "Amount": "46.95",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\10_Gas.jpg",
+        "BillDate": "10-FEB-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "2",
+      "Name": "Mary Doe"
+    },
+    "Entries": {
+      "ID": "6",
+      "TotalAmount": "53.8"
+    },
+    "Bills": [
+      {
+        "ID": "8",
+        "Amount": "53.8",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\8_Gas.jpg",
+        "BillDate": "02-JAN-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "3",
+      "Name": "Robert Doe"
+    },
+    "Entries": {
+      "ID": "3",
+      "TotalAmount": "123.3"
+    },
+    "Bills": [
+      {
+        "ID": "4",
+        "Amount": "100.00",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\4_Food.jpg",
+        "BillDate": "15-JAN-2017",
+        "ValueBesideLabel": "true"
+      },
+      {
+        "ID": "18",
+        "Amount": "23.3",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\18_Grocery.png",
+        "BillDate": "17-FEB-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "3",
+      "Name": "Robert Doe"
+    },
+    "Entries": {
+      "ID": "8",
+      "TotalAmount": "106.95"
+    },
+    "Bills": [
+      {
+        "ID": "11",
+        "Amount": "20.00",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\11_Gas.jpg",
+        "BillDate": "01-JAN-2017",
+        "ValueBesideLabel": "false"
+      },
+      {
+        "ID": "12",
+        "Amount": "73.16",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\12_Gas.jpg",
+        "BillDate": "10-FEB-2017",
+        "ValueBesideLabel": "false"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "4",
+      "Name": "Sally Doe"
+    },
+    "Entries": {
+      "ID": "2",
+      "TotalAmount": "19.26"
+    },
+    "Bills": [
+      {
+        "ID": "2",
+        "Amount": "11.10",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\2_Cab.jpg",
+        "BillDate": "01-JAN-2017",
+        "ValueBesideLabel": "true"
+      },
+      {
+        "ID": "3",
+        "Amount": "8.16",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\3_Food.jpg",
+        "BillDate": "10-FEB-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "4",
+      "Name": "Sally Doe"
+    },
+    "Entries": {
+      "ID": "9",
+      "TotalAmount": "297.18"
+    },
+    "Bills": [
+      {
+        "ID": "13",
+        "Amount": "58.92",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\13_Grocery.jpg",
+        "BillDate": "01-JAN-2017",
+        "ValueBesideLabel": "true"
+      },
+      {
+        "ID": "14",
+        "Amount": "238.26",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\14_Hotel.jpg",
+        "BillDate": "10-FEB-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "4",
+      "Name": "Sally Doe"
+    },
+    "Entries": {
+      "ID": "5",
+      "TotalAmount": "53.8"
+    },
+    "Bills": [
+      {
+        "ID": "7",
+        "Amount": "53.8",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\7_Gas.jpg",
+        "BillDate": "01-JAN-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "5",
+      "Name": "Martin Doe"
+    },
+    "Entries": {
+      "ID": "4",
+      "TotalAmount": "55.89"
+    },
+    "Bills": [
+      {
+        "ID": "5",
+        "Amount": "4.34",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\5_Food.gif",
+        "BillDate": "01-JAN-2017",
+        "ValueBesideLabel": "true"
+      },
+      {
+        "ID": "6",
+        "Amount": "51.55",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\6_Gas.jpg",
+        "BillDate": "10-FEB-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  },
+  {
+    "Emp": {
+      "ID": "5",
+      "Name": "Martin Doe"
+    },
+    "Entries": {
+      "ID": "10",
+      "TotalAmount": "81.45"
+    },
+    "Bills": [
+      {
+        "ID": "15",
+        "Amount": "69",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\15_Parking.jpg",
+        "BillDate": "01-JAN-2017",
+        "ValueBesideLabel": "true"
+      },
+      {
+        "ID": "16",
+        "Amount": "12.45",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\16_Tax.png",
+        "BillDate": "10-FEB-2017",
+        "ValueBesideLabel": "true"
+      }
+    ]
+  }
+]
