@@ -1,0 +1,15 @@
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\BillsVerification.exe.config
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\BillsJSON\Bill_1_Single.json
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\BillsJSON\Bill_1.json
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\BillsJSON\Bill_1_Batch1.json
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\BillsVerification.exe
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\BillsVerification.pdb
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\Newtonsoft.Json.dll
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\ValidateText.dll
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\Microsoft.ProjectOxford.Vision.dll
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\ValidateText.pdb
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\bin\Release\Newtonsoft.Json.xml
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\obj\Release\BillsVerification.csprojResolveAssemblyReference.cache
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\obj\Release\BillsVerification.csproj.BillsVerification.exe.config
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\obj\Release\BillsVerification.exe
+D:\git_WorkingDir\github\BillsVerification\BillsVerification\obj\Release\BillsVerification.pdb

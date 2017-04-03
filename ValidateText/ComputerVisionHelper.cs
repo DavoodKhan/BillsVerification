@@ -11,11 +11,44 @@ using System.Globalization;
 
 namespace ValidateText
 {
+    public enum MatchType
+    {
+        FullMatch,
+        NoMatch,
+        PartialMatch
+    }
+
     public static class ComputerVisionHelper
     {
-        public static async Task<bool> VerifyText(double valueToCompare, string filePath, string subscriptionKey, bool valueBeside = true)
+
+        private static bool FindAmount(double valueToFind, OcrResults ocrResult)
+        {
+            foreach (var eachRegion in ocrResult.Regions)
+            {
+                foreach (var eachLine in eachRegion.Lines)
+                {
+                    foreach (var eachWord in eachLine.Words)
+                    {
+                        double dblValue;
+                        if (double.TryParse(eachWord.Text.Trim(), NumberStyles.Number | NumberStyles.AllowCurrencySymbol, new CultureInfo("en-US"), out dblValue))
+                        {
+                            if (Math.Floor(dblValue) == Math.Floor(valueToFind))
+                            {
+                                return true;
+                            }
+                        }
+
+                    }
+                }
+            }
+            return false;
+        }
+
+        public static async Task<MatchType> VerifyText(double valueToCompare, string filePath, string subscriptionKey, bool valueBeside = true)
         {
             bool result = false;
+            MatchType mResult = MatchType.NoMatch;
+
             OcrResults ocrResult = await GetOCRResult(filePath, subscriptionKey);
 
             var wordsFound = ExtractAmount(ocrResult, filePath, valueBeside);
@@ -29,12 +62,23 @@ namespace ValidateText
                     if (Math.Floor(retValue) == Math.Floor(valueToCompare))
                     {
                         result = true;
+                        mResult = MatchType.FullMatch;
                         break;
                     }
                 }
             }
+            if (mResult == MatchType.NoMatch)
+            {
+                if (FindAmount(valueToCompare, ocrResult))
+                {
+                    mResult = MatchType.PartialMatch;
+                }
+            }
 
-            return result;
+            
+
+            //return result;
+            return mResult;
         }
 
         private static async Task<OcrResults> GetOCRResult(string filePath, string subscriptionKey)

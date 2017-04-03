@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ValidateText;
 
 namespace BillsVerification.Entities
 {
+    //public enum MatchType
+    //{
+    //        FullMatch,
+    //        NoMatch,
+    //        PartialMatch
+    //}
+
     public class Bill
     {
         public int ID { get; set; }
@@ -16,7 +24,9 @@ namespace BillsVerification.Entities
 
         public DateTime BillDate { get; set; }
 
-        public bool? IsValid { get; set; }
+        //public bool? IsValid { get; set; }
+
+        public MatchType? AmountMatchType { get; set; }
 
         public bool ValueBesideLabel { get; set; }
 

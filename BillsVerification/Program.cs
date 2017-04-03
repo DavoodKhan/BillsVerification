@@ -32,18 +32,27 @@ namespace BillsVerification
                 Console.WriteLine(string.Format("Emp ID:{0} . Emp Name: {1}", eachBill.Emp.ID, eachBill.Emp.Name));
                 foreach (var eachEntry in eachBill.Bills)
                 {
-                    if (eachEntry.IsValid.HasValue && eachEntry.IsValid.Value)
+                    //if (eachEntry.IsValid.HasValue && eachEntry.IsValid.Value)
+                    if (eachEntry.AmountMatchType.HasValue)
                     {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                    }
-                    else
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        foreach (var eachError in eachEntry.ValidationErrors)
+                        switch (eachEntry.AmountMatchType)
                         {
-                            Console.WriteLine(eachError);
+                            case ValidateText.MatchType.FullMatch:
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                break;
+                            case ValidateText.MatchType.PartialMatch:
+                                Console.ForegroundColor = ConsoleColor.Yellow;
+                                break;
+                            case ValidateText.MatchType.NoMatch:
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                break;
                         }
                     }
+                    foreach (var eachError in eachEntry.ValidationErrors)
+                    {
+                        Console.WriteLine(eachError);
+                    }
+
                     Console.WriteLine("ID: {0} ;Bill Amount: {1} ;Bill Date: {2}", eachEntry.ID, eachEntry.Amount, eachEntry.BillDate);
                     Console.ResetColor();
                 }

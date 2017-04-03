@@ -1,0 +1,26 @@
+[
+  {
+    "Emp": {
+      "ID": "1",
+      "Name": "John Doe"
+    },
+    "Entries": {
+      "ID": "1",
+      "TotalAmount": "44.4"
+    },
+    "Bills": [
+      {
+        "ID": "1",
+        "Amount": "11.00",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\1_Cab.jpg",
+        "BillDate": "01-MAR-2017"
+      },
+      {
+        "ID": "17",
+        "Amount": "33.4",
+        "BillPath": "C:\\Users\\aisadmin\\Documents\\Bills\\17_Grocery.png",
+        "BillDate": "01-FEB-2017"
+      }
+    ]
+  }
+]

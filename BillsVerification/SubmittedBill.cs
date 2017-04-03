@@ -34,17 +34,18 @@ namespace BillsVerification
                 {
                     if (System.IO.File.Exists(eachEntry.BillPath))
                     {
-                        eachEntry.IsValid = ComputerVisionHelper.VerifyText(eachEntry.Amount, eachEntry.BillPath, ConfigurationManager.AppSettings["CognitiveServicesKey"], eachEntry.ValueBesideLabel).Result;
+                        //eachEntry.IsValid = ComputerVisionHelper.VerifyText(eachEntry.Amount, eachEntry.BillPath, ConfigurationManager.AppSettings["CognitiveServicesKey"], eachEntry.ValueBesideLabel).Result;
+                        eachEntry.AmountMatchType = ComputerVisionHelper.VerifyText(eachEntry.Amount, eachEntry.BillPath, ConfigurationManager.AppSettings["CognitiveServicesKey"], eachEntry.ValueBesideLabel).Result;
                     }
                     else
                     {
-                        eachEntry.IsValid = false;
+                        eachEntry.AmountMatchType = MatchType.NoMatch;
                         eachEntry.ValidationErrors.Add("File not found");
                     }
                 }
                 catch (Exception ex)
                 {
-                    eachEntry.IsValid = false;
+                    eachEntry.AmountMatchType = MatchType.NoMatch;
                     eachEntry.ValidationErrors.Add(string.Format("Exception Occured for Bill Id: {0}. Exception Message: {1}", eachEntry.ID, ex.Message));
                 }
             }
